@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:keepScreenOn="true"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <!-- <ImageView
+             android:visibility="invisible"
+             android:layout_alignParentBottom="true"
+             android:layout_marginTop="-100dp"
+             android:id="@+id/test1"
+             android:layout_width="match_parent"
+             android:layout_height="290dp"
+             android:scaleType="centerCrop"
+             android:rotation="180"
+             android:src="@drawable/bg"
+             />-->
+
+        <ImageView
+            android:alpha=".1"
+            android:id="@+id/test1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="-30dp"
+            android:contentDescription="@string/none"
+            app:srcCompat="@drawable/bg_new"/>
+    </RelativeLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

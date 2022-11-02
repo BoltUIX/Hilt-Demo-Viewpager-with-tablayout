@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <!-- <ImageView
+             android:visibility="invisible"
+             android:layout_alignParentBottom="true"
+             android:layout_marginTop="-100dp"
+             android:id="@+id/test1"
+             android:layout_width="match_parent"
+             android:layout_height="290dp"
+             android:scaleType="centerCrop"
+             android:rotation="180"
+             android:src="@drawable/bg"
+             />-->
+
+        <ImageView
+            android:alpha=".1"
+            android:id="@+id/test1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="-30dp"
+            android:contentDescription="@string/none"
+            android:src="@drawable/bg_new" />
+    </RelativeLayout>
+
+
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing_large">
+
+            <!--CODE-->
+
+            <com.zig.gps.utils.pie.ClickablePieChart
+                android:id="@+id/chart"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:animationDuration="2000"
+                app:centerColor="@color/white"
+                app:popupText="Ziyaret"
+                app:showPercentage="true"
+                app:showPopup="true" />
+
+            <FrameLayout
+                android:id="@+id/legendLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+
+
+    </androidx.core.widget.NestedScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:orientation="vertical">
+
+        <!--
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:layout_marginTop="47dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    app:backgroundTint="@color/white"
+                    android:id="@+id/fabClose"
+                    app:tint="@color/white"
+                    android:backgroundTint="@color/black"
+                    app:elevation="10dp"
+                    app:contentDescription="Back"
+                    app:fabSize="mini"
+                    app:srcCompat="@drawable/ic_baseline_arrow_back_ios_24"
+                    android:contentDescription="Back" />
+        -->
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
