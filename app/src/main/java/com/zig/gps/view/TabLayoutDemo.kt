@@ -78,13 +78,13 @@ interface ResourceStore {
             R.string.Dashboard, R.string.Tracking, R.string.Fastags,R.string.Reports, R.string.Documents, R.string.Maintance, R.string.Alerts, R.string.Device
         )
         val pagerFragments = listOf(
-            DashboardNew.create(),
-            TrackingFragment.create(),
-            FastagFragment.create(),
-            ReportFragment.create(),
-            DocmentsFragment.create(),
-            MaintananceFragment.create(),
-            AlertsFragment.create(),
-            DeviceFragment.create())
+            DashboardNew.newInstance(),
+            TrackingFragment.newInstance(),
+            TrackingFragment.newInstance(),
+            TrackingFragment.newInstance(),
+            TrackingFragment.newInstance(),
+            TrackingFragment.newInstance(),
+            TrackingFragment.newInstance(),
+            TrackingFragment.newInstance())
     }
 }

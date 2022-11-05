@@ -13,6 +13,7 @@ import com.zig.gps.adapter.GetDeviceAdapter
 import com.zig.gps.databinding.UserDashboardNewBinding
 import com.zig.gps.utils.DataHandler
 import com.zig.gps.utils.LogData
+import com.zig.gps.view.Tracking.TrackingFragment
 import com.zig.gps.viewModel.DashboardViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
@@ -94,11 +95,17 @@ class DashboardNew : Fragment() {
 
     }
 
-    companion object {
+   /* companion object {
         fun create(): DashboardNew {
             return DashboardNew()
         }
+    }*/
+    companion object {
+        fun newInstance() = DashboardNew()
     }
+
+
+
 
     override fun onDestroyView() {
         super.onDestroyView()

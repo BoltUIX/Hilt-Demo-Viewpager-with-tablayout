@@ -38,15 +38,22 @@ class TrackingFragment : Fragment() {
 
     }
 
-    companion object {
+   /* companion object {
         fun create(): TrackingFragment {
             return TrackingFragment()
         }
-    }
+    }*/
 
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
+    }
+
+
+
+    companion object {
+        fun newInstance() =
+            TrackingFragment()
     }
 
 
